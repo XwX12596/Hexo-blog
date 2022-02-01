@@ -124,7 +124,7 @@ services:
     image: 'blog'
     container_name: hexo-blog
     ports:
-      - "4000:4000"
+      - "80:4000"
       volumes:
         - $HOME/.ssh:/root/.ssh
         - .:/hexo
