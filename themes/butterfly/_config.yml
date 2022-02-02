@@ -367,7 +367,7 @@ chatra:
 # tidio
 # https://www.tidio.com/
 tidio:
-  enable: true
+  enable: false
   public_key: a8d3wxvc6j31vcpsueyvudyxkiyrawni
 
 # daovoice
@@ -379,7 +379,7 @@ daovoice:
 # gitter
 # https://gitter.im/
 gitter:
-  enable: false
+  enable: true
   room: xwxstudio/blog
 
 # crisp
