@@ -6,8 +6,9 @@ categories:
   - tech
   - web
 top_img: https://i.loli.net/2019/11/10/gcnavZbmepS8d4u.png
+cover: https://i.loli.net/2019/11/10/gcnavZbmepS8d4u.png
 ---
-# 1. 准备工作
+# 准备工作
 ## 云服务器
 - 系统：**Ubuntu**
 - 使用域名：**www.xwxstudio.com**
@@ -57,16 +58,20 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 └── themes
 ```
 
-- `_config.yml`：`Hexo`的配置文件
-- `themes`：放主题文件的文件夹
-- `source/_drafts`：放草稿的文件夹
-- `source/_posts`：放帖子的文件夹
+{% note modern %}
+
+`_config.yml`：`Hexo`的配置文件
+`themes`：放主题文件的文件夹
+`source/_drafts`：放草稿的文件夹
+`source/_posts`：放帖子的文件夹
+
+{% endnote %}
 
 ## 基本信息配置
 
 详见[Hexo配置](https://hexo.io/zh-cn/docs/configuration)
 
-# 2. Docker配置
+# Docker配置
 
 ## Dockerfile
 
@@ -90,7 +95,7 @@ EXPOSE 4000
 CMD ["/bin/bash"]
 ```
 
-运行`docker build -t 'hexo'`
+- 运行`docker build -t 'hexo'`
 
 ### blog镜像
 
