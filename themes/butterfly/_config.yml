@@ -640,7 +640,7 @@ aside:
       link: https://space.bilibili.com/5714768
   card_announcement:
     enable: true
-    content: 纯兴趣，纯水，无干货。 <br> 右下角第二个方块是gitter聊天室。
+    content: 纯兴趣,纯水,无干货。 <br> 右下角第二个方块是gitter聊天室 <br> 或许需要科学上网。
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
