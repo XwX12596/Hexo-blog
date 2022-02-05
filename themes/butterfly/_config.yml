@@ -16,7 +16,7 @@ menu:
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: 'light' #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: 'pale night' #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -254,7 +254,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus
-  use: # Valine,Disqus
+  use: #Valine
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -294,12 +294,12 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  appId: 04tfKOwv11cx7qB6AXDgAgEx-MdYXbMMI
+  appKey: yMx5QdJagnds2U8Yv4bt6hca
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: # valine background
-  visitor: false
+  visitor: true
   option:
 
 # waline - A simple comment system with backend support fork from Valine
@@ -353,7 +353,7 @@ giscus:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: false
+chat_btn: true
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
 chat_hide_show: false
@@ -368,7 +368,7 @@ chatra:
 # https://www.tidio.com/
 tidio:
   enable: false
-  public_key:
+  public_key: a8d3wxvc6j31vcpsueyvudyxkiyrawni
 
 # daovoice
 # http://daovoice.io/
@@ -379,8 +379,8 @@ daovoice:
 # gitter
 # https://gitter.im/
 gitter:
-  enable: false
-  room:
+  enable: true
+  room: xwxstudio/blog
 
 # crisp
 # https://crisp.chat/en/
@@ -605,6 +605,18 @@ subtitle:
     - '我们每天度过的称之为日常的生活，其实是一个个奇迹的连续也说不定。'
     - '人类的赞歌就是勇气的赞歌，人类的伟大就是勇气的伟大!'
     - '不管你愿不愿意承认，作为人，我们终其一生都是孤独的。'
+    - '星星点点都与你有关…… '
+    # - '在穿过林间的时候,我觉得麻雀的死亡给我一些启示,我们虽然在尘网中生活,但永远不要失去想飞的心,不要忘记飞翔的姿势'
+    - '人被杀，就会死。'
+    # - '邪王真眼是最强的、爆炸吧现实，粉碎吧精神，放逐这个世界!'
+    - '今天的风儿甚是喧嚣啊。'
+    # - '错的不是我，错的是这个世界!'
+    - '没有未来的未来不是我想要的未来!'
+    - '在虚构的故事当中追求真实感的人脑袋一定有问题。'
+    # - '人类这种生物，不管有过多少不得不伴着泪水吞咽的教训，只要过了咽喉，所有教训便又会被彻底遗忘。'
+    - '你将不再是人，而是成为名副其实的工具!'
+    - '我只想过平静的生活。'
+    - 'Q.E.D.'
 
 # Loading Animation (加載動畫)
 preloader: true
@@ -628,7 +640,7 @@ aside:
       link: https://space.bilibili.com/5714768
   card_announcement:
     enable: true
-    content: 纯兴趣，纯水，无干货。
+    content: 纯兴趣，纯水，无干货。 <br> 右下角第二个方块是gitter聊天室。
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -748,8 +760,8 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: flat
-  icons: false
+  style: simple
+  icons: true
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
