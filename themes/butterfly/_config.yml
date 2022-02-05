@@ -501,7 +501,7 @@ enter_transitions: true
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -510,7 +510,7 @@ canvas_ribbon:
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
-  enable: true
+  enable: false
   mobile: true
 
 # canvas_nest
@@ -672,8 +672,8 @@ aside:
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
-  site_uv: true
-  site_pv: true
+  site_uv: false
+  site_pv: false
   page_pv: false
 
 # Time difference between publish date and now (網頁運行時間)
@@ -774,14 +774,14 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -837,7 +837,7 @@ inject:
   head:
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_3162096_a8fsfdazqzp.css">
   bottom:
-    # - <script src="xxxx"></script>
+    - <div class="aplayer no-destroy" data-id="7276981143" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false"> </div>
 
 artitalk:
   enable: true
