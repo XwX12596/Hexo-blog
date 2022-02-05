@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Minecraft服务器（Running）</title>
+      <link href="/2022/02/02/MC/"/>
+      <url>/2022/02/02/MC/</url>
+      
+        <content type="html"><![CDATA[<h1 id="minecraft-1-18-1-Fabric"><a href="#minecraft-1-18-1-Fabric" class="headerlink" title="minecraft 1.18.1 Fabric"></a>minecraft 1.18.1 Fabric</h1><div class="note default modern"><script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script><p>服务器地址：<code>mc.xwxstudio.xyz:11055</code></p><p>游戏类型：原版</p><p>目前在线玩家： <span data-playercounter-ip="mc.xwxstudio.xyz:11055">0</span>  人。</p><p>模组列表：</p><ul><li><strong>phosphor(可选)</strong></li><li><strong>lithium(可选)</strong></li></ul></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Games </tag>
+            
+            <tag> Minecraft </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>记录利用docker开设Hexo框架简单博客</title>
+      <link href="/2022/02/01/Hexo/"/>
+      <url>/2022/02/01/Hexo/</url>
+      
+        <content type="html"><![CDATA[<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="云服务器"><a href="#云服务器" class="headerlink" title="云服务器"></a>云服务器</h2><ul><li>系统：<strong>Ubuntu</strong></li><li>使用域名：<strong><a href="http://www.xwxstudio.com/">www.xwxstudio.com</a></strong></li></ul><h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><h3 id="从NodeSource安装"><a href="#从NodeSource安装" class="headerlink" title="从NodeSource安装"></a>从<a href="https://github.com/nodesource/distributions#debinstall">NodeSource</a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -</span><br><span class="line">sudo apt-get install -y nodejs</span><br></pre></td></tr></table></figure><h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><h3 id="官方文档的npm安装。"><a href="#官方文档的npm安装。" class="headerlink" title="官方文档的npm安装。"></a>官方文档的npm安装。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash</span><br></pre></td></tr></table></figure><h3 id="在Node背景下的Hexo安装。"><a href="#在Node背景下的Hexo安装。" class="headerlink" title="在Node背景下的Hexo安装。"></a>在Node背景下的Hexo安装。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line"><span class="comment">#初始化文件夹</span></span><br><span class="line">hexo init .</span><br><span class="line">npm install</span><br><span class="line"><span class="comment">#在4000端口开放服务</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment">#指定端口使用参数 -p</span></span><br></pre></td></tr></table></figure><h2 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h2><h3 id="使用官方安装脚本自动安装。"><a href="#使用官方安装脚本自动安装。" class="headerlink" title="使用官方安装脚本自动安装。"></a>使用官方安装脚本自动安装。</h3><p>从阿里云用<strong>cURL</strong>安装：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun</span><br></pre></td></tr></table></figure><h1 id="Hexo配置"><a href="#Hexo配置" class="headerlink" title="Hexo配置"></a>Hexo配置</h1><h2 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure><div class="note modern"><p><code>_config.yml</code>：<code>Hexo</code>的配置文件<br><code>themes</code>：放主题文件的文件夹<br><code>source/_drafts</code>：放草稿的文件夹<br><code>source/_posts</code>：放帖子的文件夹</p></div><h2 id="基本信息配置"><a href="#基本信息配置" class="headerlink" title="基本信息配置"></a>基本信息配置</h2><p>详见<a href="https://hexo.io/zh-cn/docs/configuration">Hexo配置</a></p><h1 id="Docker配置"><a href="#Docker配置" class="headerlink" title="Docker配置"></a>Docker配置</h1><h2 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h2><h3 id="hexo镜像"><a href="#hexo镜像" class="headerlink" title="hexo镜像"></a>hexo镜像</h3><ul><li>仅仅作Hexo模板的初始化</li></ul><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> node:latest</span><br><span class="line"></span><br><span class="line"><span class="keyword">MAINTAINER</span> XwX</span><br><span class="line"></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> /hexo</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> npm install hexo-cli -g\</span></span><br><span class="line"><span class="bash">&amp;&amp; hexo init .\</span></span><br><span class="line"><span class="bash">&amp;&amp; npm install</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">4000</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> [<span class="string">&quot;/bin/bash&quot;</span>]</span></span><br></pre></td></tr></table></figure><ul><li>运行<code>docker build -t &#39;hexo&#39;</code></li></ul><h3 id="blog镜像"><a href="#blog镜像" class="headerlink" title="blog镜像"></a>blog镜像</h3><ul><li>生成具体博客镜像</li></ul><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> hexo:latest</span><br><span class="line"></span><br><span class="line"><span class="keyword">MAINTAINER</span> name &lt;mail&gt;</span><br><span class="line"></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> /hexo</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">4000</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> [<span class="string">&quot;/usr/bin/env&quot;</span>,<span class="string">&quot;hexo&quot;</span>,<span class="string">&quot;server&quot;</span>]</span></span><br></pre></td></tr></table></figure><ul><li>运行<code>docker build -t  &#39;blog&#39;  . </code></li></ul><h2 id="docker-compose-yml"><a href="#docker-compose-yml" class="headerlink" title="docker-compose.yml"></a>docker-compose.yml</h2><ul><li>在具体文件夹创建容器</li></ul><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&#x27;3&#x27;</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">blog:</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">always</span></span><br><span class="line">    <span class="attr">build:</span></span><br><span class="line">      <span class="attr">context:</span> <span class="string">.</span></span><br><span class="line">      <span class="attr">dockerfile:</span> <span class="string">Dockerfile</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">&#x27;blog&#x27;</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">hexo-blog</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;80:4000&quot;</span></span><br><span class="line">      <span class="attr">volumes:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">$HOME/.ssh:/root/.ssh</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">.:/hexo</span></span><br></pre></td></tr></table></figure><ul><li><p>开启容器：<code>docker-compose up -d</code></p></li><li><p>关闭容器：<code>docker-compose down</code></p></li></ul><h1 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h1><h2 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h2><ul><li>直接对宿主机文件进行操作即可实现hexo博客的创建，配置与写作。</li></ul><h2 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h2><ul><li>直接使用<code>Git</code>对本地和云端的数据进行版本管理。</li><li>可以使用<code>VScode</code>进行<code>Git</code>的pull和push操作。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> tech </category>
+          
+          <category> web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Docker </tag>
+            
+            <tag> Blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
