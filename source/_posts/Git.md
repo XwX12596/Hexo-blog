@@ -26,11 +26,13 @@ yay -Sy git
 ## 基础配置
 
 - 首先是报上名来。
+
 ``` bash
 git config --global user.name "whoami"
 git config --global user.email myemail@example.com
 ```
 如果不放心是否成功可以查一下：
+
 ```bash
 git config --list
 ```
@@ -45,9 +47,11 @@ git commit -m 'init'
 - 然后是加公钥
 
 先是自己机子生成一下
+
 ``` bash
 ssh-keygen -t rsa -C "myemail@example.com"
 ```
+
 现在`～/.ssh/id_rsa.pub`里面已经出现了公钥，全部复制即可。
 
 再是加入到Github上的设置里

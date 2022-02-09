@@ -20,12 +20,17 @@ cover: https://i.loli.net/2019/11/10/gcnavZbmepS8d4u.png
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
+或者`yay -Sy nodejs`
+
 ## Hexo
+
 ### 官方文档的npm安装。
 
 ``` bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
+或者`yay -Sy npm`
+
 ### 在Node背景下的Hexo安装。
 
 ``` bash
@@ -45,7 +50,10 @@ hexo server
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 ```
 
+或者`yay -Sy docker docker-compose`
+
 # Hexo配置
+
 ## 文件目录
 ```
 .
