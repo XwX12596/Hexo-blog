@@ -5,6 +5,8 @@ tags:
   - Github
 categories:
   - tech
+top_img: https://s2.loli.net/2022/02/09/N2v5PJXYrfUkK1e.jpg
+cover: https://s2.loli.net/2022/02/09/CFZSRifGyV8KWge.jpg
 date: 2022-02-09 21:37:07
 ---
 
@@ -25,8 +27,8 @@ yay -Sy git
 
 - 首先是报上名来。
 ``` bash
-$ git config --global user.name "whoami"
-$ git config --global user.email myemail@example.com
+git config --global user.name "whoami"
+git config --global user.email myemail@example.com
 ```
 如果不放心是否成功可以查一下：
 ```bash
@@ -46,6 +48,8 @@ git commit -m 'init'
 ``` bash
 ssh-keygen -t rsa -C "myemail@example.com"
 ```
+现在`～/.ssh/id_rsa.pub`里面已经出现了公钥，全部复制即可。
+
 再是加入到Github上的设置里
 
 ```
