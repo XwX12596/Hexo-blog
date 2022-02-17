@@ -1,16 +1,22 @@
-- class_name: 友情链接
-  class_desc: 那些人，那些事
+- class_name: 感谢
+  class_desc:
   link_list:
     - name: Hexo
       link: https://hexo.io
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
       descr: 快速、简单且强大的网络博客框架
-    - name: AlanLee
-      link: mailto:1049269601@qq.com
-      avatar: https://s2.loli.net/2022/01/23/z45cg7KYpSbD21w.png
-      descr: 重度二次元，骑士团，战双顶级养老玩家。
     - name: 泠鸢yousa
       link: https://space.bilibili.com/282994
       avatar: https://s2.loli.net/2022/02/05/jAbNpdzurHchKk6.png
       descr: 虚拟艺人团体VirtuaReal Star成员,每周六20:30 b站直播。
-      
+- class_name: 友情链接
+  class_desc: FRIENDS
+  link_list:
+    - name: AlanLee
+      link: mailto:1049269601@qq.com
+      avatar: https://s2.loli.net/2022/01/23/z45cg7KYpSbD21w.png
+      descr: 重度二次元，骑士团，战双顶级养老玩家。
+    - name: 知交
+      link: http://blog.zhijiao-blog.com
+      avatar: https://s2.loli.net/2022/02/17/PvJEwZGLSso6zpD.jpg
+      descr: 低调的大佬,AI专业。
