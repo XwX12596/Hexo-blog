@@ -8,7 +8,7 @@ tags:
 top_img: https://s2.loli.net/2022/02/02/aog3ZnS5BT9U6ts.png
 cover: https://s2.loli.net/2022/02/02/aog3ZnS5BT9U6ts.png
 aside: false
-sticky: true
+# sticky: true
 ---
 
 # minecraft 1.18.1 Fabric
@@ -65,9 +65,7 @@ services:
 目前在线玩家： <span data-playercounter-ip="mc.xwxstudio.xyz:11055">0</span>  人。 -->
 
 服务器备份在[Github](https://github.com/XwX12596/Fabric118)
-
-模组列表：
+{% endnote %}
+#### 模组列表：
 - **phosphor(可选)**
 - **lithium(可选)**
-{% endnote %}
-
