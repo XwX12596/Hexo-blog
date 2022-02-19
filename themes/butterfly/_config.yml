@@ -86,7 +86,7 @@ disable_top_img: false
 # The banner image of home page
 index_img: https://s2.loli.net/2022/01/25/KsS3T1egQfbowBd.jpg #https://s2.loli.net/2022/01/25/csHV4wjvQU5eKyL.jpg  #liming https://s2.loli.net/2022/01/25/csHV4wjvQU5eKyL.jpg #water https://s2.loli.net/2022/01/25/DAP9xacfK6Ye18I.jpg 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://s2.loli.net/2022/01/25/DAP9xacfK6Ye18I.jpg #https://s2.loli.net/2022/01/25/csHV4wjvQU5eKyL.jpg #https://s2.loli.net/2022/01/25/yCjdhY6AteaPMxH.jpg
+default_top_img: https://s2.loli.net/2022/02/19/EADqwR1TM5LU8cG.jpg #https://s2.loli.net/2022/01/25/DAP9xacfK6Ye18I.jpg #https://s2.loli.net/2022/01/25/csHV4wjvQU5eKyL.jpg #https://s2.loli.net/2022/01/25/yCjdhY6AteaPMxH.jpg
 
 # The banner image of archive page
 archive_img: #https://s2.loli.net/2022/01/25/dNTRbtSQ1eu82JW.jpg #car https://s2.loli.net/2022/01/25/xfNTaIpCnmX74vV.jpg
