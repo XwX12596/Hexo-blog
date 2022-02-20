@@ -31,6 +31,7 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-butterfly": "^4.0.1",
     "hexo-theme-landscape": "^0.0.3",
+    "node-snackbar": "^0.1.16",
     "pangu": "^4.0.7",
     "valine": "^1.4.16"
   }
