@@ -43,6 +43,10 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | 
 {% endnote %}
 
 # 从Kindle商店购买并加工为无加密的文件
-添加书籍后，进行转换书籍至需要的格式即可。
+搜索引擎搜索`Kindle商店`，在我的账户下拉菜单里找到`管理我的内容与设备`，在此页面可以下载加密后的文件。
+下面看到`Calibre`，将文件添加书籍后，进行转换书籍至需要的格式，DeDRM便会自动运行，得到非加密的文件。
+{% note info modern %}
+当然你也可以在类似[z-library](https://zh.z-lib.org/)之类的找到想要的文档。
+{% endnote %}
 # 网络电子书传进Kindle
 添加书籍，传输进去即可。
