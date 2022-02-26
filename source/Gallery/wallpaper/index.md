@@ -1,5 +1,5 @@
 ---
-title: wallpaper
+title: Wallpaper
 date: 2022-01-24 14:29:11
 ---
 {% gallery %}
